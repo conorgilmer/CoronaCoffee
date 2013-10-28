@@ -92,8 +92,16 @@ function listButtonRelease( event )
 
  -- navigate to information about the item
 	storyboard.gotoScene( "itemscene", options )
+  
+end --end list button release
 
-end
+local function onbackBtnRelease()
+    -- go to levels.lua scene
+    storyboard.gotoScene( "products")    
+    return true
+end --onbackrelease end
+
+
 
 --setup each row as a new table, then add title, subtitle, and image
 data[1] = {}
@@ -128,7 +136,7 @@ data[6].image = "coffees/coffee6.png"
 
 
 
-local topBoundary = display.screenOriginY + 40
+local topBoundary = display.screenOriginY + 80
 local bottomBoundary = display.screenOriginY + 0
 
 -- create the list of items
@@ -187,8 +195,19 @@ group:insert(navBar)
 local navHeader = display.newText("Teas", 0, 0, native.systemFontBold, 16)
 navHeader:setTextColor(255, 255, 255)
 navHeader.x = display.contentWidth*.5
-navHeader.y = navBar.y
+navHeader.y = navBar.y + 40
 group:insert(navHeader)
+
+backBtn = ui.newButton{
+	default = "backButton.png",
+	over = "backButton_over.png",
+	onRelease = onbackBtnRelease
+}
+
+backBtn.x = math.floor(backBtn.width/2) 
+backBtn.y = navBar.y + 40
+--backBtn.alpha = 0
+group:insert(backBtn)
 
 --Add a white background to the list.  
 

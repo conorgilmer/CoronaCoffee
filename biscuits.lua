@@ -92,7 +92,16 @@ function listButtonRelease( event )
 
 	storyboard.gotoScene( "itemscene", options )
 
-end
+end --end list button release
+
+local function onbackBtnRelease()
+    -- go to levels.lua scene
+    storyboard.gotoScene( "products")    
+    return true
+end --onbackrelease end
+
+
+
 
 --setup each row as a new table, then add title, subtitle, and image
 data[1] = {}
@@ -110,7 +119,7 @@ data[3].title = "Fig Rolls"
 data[3].subtitle = "Jacobs Fig Rolls"
 data[3].image = "biscuits/figroll90.png"
 
-local topBoundary = display.screenOriginY + 40
+local topBoundary = display.screenOriginY + 80
 local bottomBoundary = display.screenOriginY + 0
 
 -- create the list of items
@@ -166,11 +175,23 @@ navBar.x = display.contentWidth*.5
 navBar.y = math.floor(display.screenOriginY + navBar.height*0.5) -- screenOriginY is used in cases like iphone 5 where borders are added to screen
 group:insert(navBar)
 
-local navHeader = display.newText("BIckies", 0, 0, native.systemFontBold, 16)
+local navHeader = display.newText("Biscuits", 0, 0, native.systemFontBold, 16)
 navHeader:setTextColor(255, 255, 255)
 navHeader.x = display.contentWidth*.5
-navHeader.y = navBar.y
+navHeader.y = navBar.y + 40
 group:insert(navHeader)
+
+backBtn = ui.newButton{
+	default = "backButton.png",
+	over = "backButton_over.png",
+	onRelease = onbackBtnRelease
+}
+
+backBtn.x = math.floor(backBtn.width/2) 
+backBtn.y = navBar.y + 40
+--backBtn.alpha = 0
+group:insert(backBtn)
+
 
 --Add a white background to the list.  
 

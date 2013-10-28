@@ -53,7 +53,7 @@ function scene:createScene( event )
   
   -- page content text
   -- todo import this text or format it using html? embed map?
-  local description = display.newText("Cafe Libre\n\tIs a cafe which specialises in coffees, teas and continential cuisine. Located in the historic heart of dublin the cafe is famous for our blend of teas, and brewed coffees from around the world.\n \tYou can also select from our range of snack foods.", 0, 0, 300, 300, native.systemFont, 14)
+  local description = display.newText("Cafe Libre\n\tIs a cafe which specialises in coffees, teas and continential cuisine. Located in the historic heart of dublin the cafe is famous for our blend of teas, and brewed coffees from around the world.\n \tDunk your favorite biscuit from our range of biscuits, you can also select from our range of snack foods.", 0, 0, 300, 300, native.systemFont, 14)
   description:setTextColor(0) -- black
   description:setReferencePoint(_C)
   description.x = _W * 0.5 + 10

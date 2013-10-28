@@ -206,7 +206,7 @@ backBtn = ui.newButton{
 }
 
 backBtn.x = math.floor(backBtn.width/2) 
-backBtn.y = navBar.y
+backBtn.y = navBar.y + 40
 --backBtn.alpha = 0
 group:insert(backBtn)
 
