@@ -7,6 +7,11 @@
 local storyboard = require( "storyboard" )
 local scene = storyboard.newScene()
 
+-- Screen dimensions
+local _W = display.contentWidth 
+local _H = display.contentHeight
+local _C = display.CenterReferencePoint
+
 ----------------------------------------------------------------------------------
 -- 
 --	NOTE:
@@ -205,7 +210,7 @@ backBtn = ui.newButton{
 }
 
 backBtn.x = math.floor(backBtn.width/2) 
-backBtn.y = navBar.y
+backBtn.y = _H - 50 --navBar.y
 --backBtn.alpha = 0
 group:insert(backBtn)
 
