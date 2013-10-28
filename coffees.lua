@@ -56,7 +56,7 @@ local ui = require("ui")
 display.setStatusBar( display.HiddenStatusBar ) 
 --initial values
 
-local screenOffsetW, screenOffsetH = display.contentWidth -  display.viewableContentWidth, display.contentHeight - display.viewableContentHeight 
+local screenOffsetW, screenOffsetH = display.contentWidth -  display.viewableContentWidth, display.contentHeight - display.viewableContentHeight
 -- used for offsetting buttons
 -- display.viewableContentWidth = A read-only property that contains the width of the viewable screen area in content coordinates.
 -- In cases where you use scaling sometimes content is scaled where some appears off screen. Only viewable content gets considered here
@@ -140,7 +140,6 @@ data[6].subtitle = "Espresso with hot water"
 data[6].image = "coffees/coffee6.png"
 
 
-
 local topBoundary = display.screenOriginY + 80 --twice 40
 local bottomBoundary = display.screenOriginY + 0
 
@@ -216,7 +215,7 @@ group:insert(backBtn)
 
 --Add a white background to the list.  
 
-local listBackground = display.newRect( 0, 0, myList.width, myList.height )
+local listBackground = display.newRect( 0, 0, myList.width, myList.height -40 )
 listBackground:setFillColor(255,255,255)
 myList:insert(1,listBackground)
 

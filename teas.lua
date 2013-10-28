@@ -105,34 +105,15 @@ end --onbackrelease end
 
 --setup each row as a new table, then add title, subtitle, and image
 data[1] = {}
-data[1].title = "Hot Coffee"
-data[1].subtitle = "Grounds brewed in hot water"
-data[1].image = "coffees/coffee1.png"
+data[1].title = "Afternoon Tea"
+data[1].subtitle = "Keynan Tea"
+data[1].image = "teas/tea90.png"
 
 data[2] = {}
-data[2].title = "Iced Coffee"
-data[2].subtitle = "Chilled coffee with ice"
-data[2].image = "coffees/coffee2.png"
+data[2].title = "Breakfast Tea"
+data[2].subtitle = "Sri Lankan Tea"
+data[2].image = "teas/tea90.png"
 
-data[3] = {}
-data[3].title = "Espresso"
-data[3].subtitle = "Hot water forced through"
-data[3].image = "coffees/coffee3.png"
-
-data[4] = {}
-data[4].title = "Cappuccino"
-data[4].subtitle = "Espresso with frothy milk"
-data[4].image = "coffees/coffee4.png"
-
-data[5] = {}
-data[5].title = "Latte"
-data[5].subtitle = "More milk and less froth"
-data[5].image = "coffees/coffee5.png"
-
-data[6] = {}
-data[6].title = "Americano"
-data[6].subtitle = "Espresso with hot water"
-data[6].image = "coffees/coffee6.png"
 
 
 
@@ -179,7 +160,7 @@ local bottomBoundary = display.screenOriginY + 0
 group:insert(myList)
 
 local function scrollToTop()
-	myList:scrollTo(topBoundary)
+	myList:scrollTo(topBoundary+40)
 end
 
 --Setup the nav bar 

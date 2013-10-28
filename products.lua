@@ -246,7 +246,7 @@ group:insert(navHeader)
     group:insert(coffeeArrow)
     
     -- teas Icon
-    teasArrow = display.newImageRect ( "coffees/coffee2.png", 75,75)
+    teasArrow = display.newImageRect ( "teas/tea90.png", 75,75)
     teasArrow.x = (_W/4) * 3
 	  teasArrow.y = _H/4
     group:insert(teasArrow)
