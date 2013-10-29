@@ -51,6 +51,8 @@ local ui = require("ui")
 display.setStatusBar( display.HiddenStatusBar ) 
 --initial values
 
+lastScene = "teas"
+
 local screenOffsetW, screenOffsetH = display.contentWidth -  display.viewableContentWidth, display.contentHeight - display.viewableContentHeight 
 -- used for offsetting buttons
 -- display.viewableContentWidth = A read-only property that contains the width of the viewable screen area in content coordinates.
@@ -108,13 +110,13 @@ data[1] = {}
 data[1].title = "Afternoon Tea"
 data[1].subtitle = "Keynan Tea"
 data[1].image = "teas/tea90.png"
-date[1].image = "teas"
+data[1].scene = "teas"
 
 data[2] = {}
 data[2].title = "Breakfast Tea"
 data[2].subtitle = "Sri Lankan Tea"
 data[2].image = "teas/tea90.png"
-
+data[2].scene = "teas"
 
 
 

@@ -50,7 +50,11 @@ local tableView = require("tableView")
 -- ui library for buttons 
 local ui = require("ui") 
 display.setStatusBar( display.HiddenStatusBar ) 
+
+
 --initial values
+
+lastScene = "food" -- so as backbutton on items can go back to product categorypage
 
 local screenOffsetW, screenOffsetH = display.contentWidth -  display.viewableContentWidth, display.contentHeight - display.viewableContentHeight 
 -- used for offsetting buttons

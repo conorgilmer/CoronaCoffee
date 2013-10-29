@@ -121,6 +121,7 @@ function scene:enterScene( event )
       	  print(params.var1) -- Title
       	  print(params.var2) -- Subtitle
       	  print(params.var3) -- image
+          print(params.var4) -- scene?
 
    --local textMessage = display.newText( "Hello Corona User!nHope you're having a great day.", 160, 325, "Helvetica", 18 )
    --textMessage:setTextColor( 7 )
@@ -167,6 +168,25 @@ function scene:enterScene( event )
 
 	-----------------------------------------------------------------------------
 	
+  local function onbackBtnRelease()
+    -- go to levels.lua scene
+    storyboard.gotoScene( lastScene)    
+    return true
+end --onbackrelease end
+
+
+backBtn = ui.newButton{
+	default = "backButton.png",
+	over = "backButton_over.png",
+	onRelease = onbackBtnRelease
+}
+
+backBtn.x = _W - 60 
+backBtn.y = _H - 40
+--backBtn.alpha = 0
+group:insert(backBtn)
+
+  
 end
 
 

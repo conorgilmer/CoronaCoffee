@@ -14,6 +14,8 @@ display.setStatusBar( display.HiddenStatusBar )
 local _W = display.contentWidth 
 local _H = display.contentHeight
 
+_G.lastScene = "homemenu"
+
 -- Add any objects that should appear on all scenes below (e.g. tab bar, hud, etc.):
 
 local function segmentedControlListener( event )

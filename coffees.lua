@@ -56,6 +56,9 @@ local ui = require("ui")
 display.setStatusBar( display.HiddenStatusBar ) 
 --initial values
 
+
+lastScene = "coffees" -- so as backbutton on items can go back to product categorypage
+
 local screenOffsetW, screenOffsetH = display.contentWidth -  display.viewableContentWidth, display.contentHeight - display.viewableContentHeight
 -- used for offsetting buttons
 -- display.viewableContentWidth = A read-only property that contains the width of the viewable screen area in content coordinates.
