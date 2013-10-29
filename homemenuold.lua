@@ -111,7 +111,110 @@ function scene:createScene( event )
     --group:insert(contactArrow)
 
 --endEvent Handlers
-   
+    button1 = widget.newButton(
+	{
+		id= "button 1",
+		left = 0,
+		top = 0,
+		label = "Home",
+		width = 80,
+		height = 32,
+		font = Helvetica,
+		fontSize = 15,
+		labelColor = {
+				default={0,0,0},
+				over= {255,255,255}
+		},
+		defaultColor={201,107,61},
+		overColor = {219,146,85},
+		onPress = btnOnPressHandler ,
+		onDrag = btnOnDragHandler,
+		onRelease = btnOnReleaseHandler
+		
+	})
+	
+	button1.x = 40
+	button1.y = 16--display.contentHeight/2
+	group:insert(button1)
+	
+	button2 = widget.newButton(
+	{
+		id= "button 2",
+		left = 0,
+		top = 0,
+		label = "Products",
+		width = 80,
+		height = 32,
+		font = Helvetica,
+		fontSize = 15,
+		labelColor = {
+				default={0,0,0},
+				over= {255,255,255}
+		},
+		defaultColor={201,107,61},
+		overColor = {219,146,85},
+		onPress = btnOnPressHandler ,
+		onDrag = btnOnDragHandler,
+		onRelease = btnOnReleaseHandler
+		
+	})
+	
+	button2.x = 120
+	button2.y = 16 --display.contentHeight/2
+	group:insert(button2)
+	
+	  button3 = widget.newButton(
+	{
+		id= "button 3",
+		left = 0,
+		top = 0,
+		label = "about",
+		width = 80,
+		height = 32,
+		font = Helvetica,
+		fontSize = 15,
+		labelColor = {
+				default={0,0,0},
+				over= {255,255,255}
+		},
+		defaultColor={201,107,61},
+		overColor = {219,146,85},
+		onPress = btnOnPressHandler ,
+		onDrag = btnOnDragHandler,
+		onRelease = btnOnReleaseHandler
+		
+	})
+	
+	button3.x = 200
+	button3.y = 16 --display.contentHeight/2
+	group:insert(button3)
+	
+    button4 = widget.newButton(
+	{
+		id= "button 4",
+		left = 0,
+		top = 0,
+		label = "Contact",
+		width = 80,
+		height = 32,
+		font = Helvetica,
+		fontSize = 15,
+		labelColor = {
+				default={0,0,0},
+				over= {255,255,255}
+		},
+		defaultColor={201,107,61},
+		overColor = {219,146,85},
+		onPress = btnOnPressHandler ,
+		onDrag = btnOnDragHandler,
+		onRelease = btnOnReleaseHandler
+		
+	})
+	
+	button4.x = 280
+	button4.y = 16 --display.contentHeight/2
+	group:insert(button4)
+
 	-----------------------------------------------------------------------------
 	
    Pbutton = widget.newButton(

@@ -126,6 +126,110 @@ navHeader.x = display.contentWidth*.5
 navHeader.y = navBar.y + 40
 group:insert(navHeader)
 	
+-- menubar
+    nbheight = navBar.y * 2
+    button1 = widget.newButton(
+	{
+		id= "homemenubutton",
+		left = 0,
+		top = 0,
+		label = "Home",
+		width = 80,
+		height = 32,
+		font = Helvetica,
+		fontSize = 15,
+		labelColor = {
+				default={0,0,0},
+				over= {255,255,255}
+		},
+		defaultColor={201,107,61},
+		overColor = {219,146,85},
+		onPress = homemenuPressed, --btnOnPressHandler ,
+		onDrag = btnOnDragHandler,
+		onRelease = homemenu --btnOnReleaseHandler
+		
+	})
+	
+	button1.x = 40
+	button1.y = 16 + nbheight--display.contentHeight/2
+	--group:insert(button1)
+	
+	button2 = widget.newButton(
+	{
+		id= "products menu button",
+		left = 0,
+		top = 0,
+		label = "Products",
+		width = 80,
+		height = 32,
+		font = Helvetica,
+		fontSize = 15,
+		labelColor = {
+				default={0,0,0},
+				over= {255,255,255}
+		},
+		defaultColor={201,107,61},
+		overColor = {219,146,85},
+		onPress = productsPressed, --btnOnPressHandler ,
+		onDrag = btnOnDragHandler,
+		onRelease = btnOnReleaseHandler
+		
+	})
+	
+	button2.x = 120
+	button2.y = 16 + nbheight --display.contentHeight/2
+	--group:insert(button2)
+	
+	  button3 = widget.newButton(
+	{
+		id= "about menu button",
+		left = 0,
+		top = 0,
+		label = "About",
+		width = 80,
+		height = 32,
+		font = Helvetica,
+		fontSize = 15,
+		labelColor = {
+				default={0,0,0},
+				over= {255,255,255}
+		},
+		defaultColor={201,107,61},
+		overColor = {219,146,85},
+		onPress = aboutPressed, --btnOnPressHandler ,
+		onDrag = btnOnDragHandler,
+		onRelease = btnOnReleaseHandler
+		
+	})
+	
+	button3.x = 200
+	button3.y = 16 + nbheight --display.contentHeight/2
+	--group:insert(button3)
+	
+    button4 = widget.newButton(
+	{
+		id= "contact button",
+		left = 0,
+		top = 0,
+		label = "Contact",
+		width = 80,
+		height = 32,
+		font = Helvetica,
+		fontSize = 15,
+		labelColor = {
+				default={0,0,0},
+				over= {255,255,255}
+		},
+		defaultColor={201,107,61},
+		overColor = {219,146,85},
+		onPress = contactsPressed, --btnOnPressHandler ,
+		onDrag = btnOnDragHandler,
+		onRelease = btnOnReleaseHandler
+	})
+	
+	button4.x = 280
+	button4.y = 16 +nbheight --display.contentHeight/2
+	--group:insert(button4)
 
 	-----------------------------------------------------------------------------
 	

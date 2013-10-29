@@ -43,6 +43,10 @@ function scene:createScene( event )
   background:setFillColor(255)   
   group:insert(background)
   
+
+  -- set generic navbar (menu) to true
+  navbar.isVisible = true
+  
   -- display text (user black text)
   local title = display.newText("About Us.", 0, 0, native.systemFont, 32 )
   title:setTextColor(0)      
@@ -77,6 +81,9 @@ end
 function scene:enterScene( event )
 	local group = self.view
 	
+  
+  -- set generic navbar (menu) to true
+  navbar.isVisible = true
 	-----------------------------------------------------------------------------
 		
 	--	INSERT code here (e.g. start timers, load audio, start listeners, etc.)

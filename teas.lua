@@ -108,6 +108,7 @@ data[1] = {}
 data[1].title = "Afternoon Tea"
 data[1].subtitle = "Keynan Tea"
 data[1].image = "teas/tea90.png"
+date[1].image = "teas"
 
 data[2] = {}
 data[2].title = "Breakfast Tea"

@@ -115,6 +115,10 @@ function scene:enterScene( event )
 	--rightArrow:addEventListener ("touch", right)
 	-----------------------------------------------------------------------------
 	
+  
+  -- set generic navbar (menu) to true
+  navbar.isVisible = true
+  
 end
 
 
