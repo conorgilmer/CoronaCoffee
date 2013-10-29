@@ -51,7 +51,7 @@ local ui = require("ui")
 display.setStatusBar( display.HiddenStatusBar ) 
 --initial values
 
-lastScene = "teas"
+lastScene = "teas" -- so as back button can go back to the list of teas
 
 local screenOffsetW, screenOffsetH = display.contentWidth -  display.viewableContentWidth, display.contentHeight - display.viewableContentHeight 
 -- used for offsetting buttons
