@@ -215,7 +215,7 @@ group:insert(backBtn)
 
 --Add a white background to the list.  
 
-local listBackground = display.newRect( 0, 0, myList.width, myList.height -40 )
+local listBackground = display.newRect( 0, 0, myList.width, myList.height )
 listBackground:setFillColor(255,255,255)
 myList:insert(1,listBackground)
 

@@ -283,7 +283,7 @@ function scene:enterScene( event )
 	-----------------------------------------------------------------------------
 		
 	--	INSERT code here (e.g. start timers, load audio, start listeners, etc.)
-	message:setTextColor( 255,0,0 )
+	--message:setTextColor( 255,0,0 )
   -- listen when Icons are clicked
 	coffeeArrow:addEventListener ("touch", coffees)
 	teasArrow:addEventListener ("touch", teas)

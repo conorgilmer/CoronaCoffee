@@ -59,6 +59,14 @@ function scene:createScene( event )
   description.x = _W * 0.5 + 10
   description.y = title.y + 200
   group:insert(description)
+  
+
+  -- show logo at bottom of page
+  local logoImage = display.newImageRect ("cafelogo.png", 320,100)
+  logoImage.x = (_W/2)
+	logoImage.y = _H-100
+  group:insert(logoImage)
+  
 
 	-----------------------------------------------------------------------------
 	
@@ -72,7 +80,7 @@ function scene:enterScene( event )
 	-----------------------------------------------------------------------------
 		
 	--	INSERT code here (e.g. start timers, load audio, start listeners, etc.)
-	message:setTextColor( 255,0,0 )
+	--message:setTextColor( 255,0,0 )
 
 	--rightArrow:addEventListener ("touch", right)
 	-----------------------------------------------------------------------------

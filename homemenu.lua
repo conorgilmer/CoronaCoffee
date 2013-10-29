@@ -9,6 +9,11 @@ local scene = storyboard.newScene()
 
 local widget = require("widget")
 
+-- Screen dimensions
+local _W = display.contentWidth 
+local _H = display.contentHeight
+local _C = display.CenterReferencePoint
+
 ----------------------------------------------------------------------------------
 -- 
 --	NOTE:
@@ -71,26 +76,32 @@ function scene:createScene( event )
 	
   --set background
 	background = display.newImageRect ( "background.jpg", 320,480)
-	background.x = display.contentWidth/2
-	background.y = display.contentHeight/2
+	background.x = _W/2
+	background.y = _H/2
 	group:insert(background)
 
   -- page title text ... Logo?
-	message = display.newText( "Cafe Libre", 160, 50, nil, 60 )
-	message.x = display.contentWidth/2
-	message.y = display.contentHeight/5
-	group:insert(message)
+	--message = display.newText( "Cafe Libre", 160, 50, nil, 60 )
+	--message.x = display.contentWidth/2
+	--message.y = display.contentHeight/5
+	--group:insert(message)
 
 
-    aboutArrow = display.newImageRect ( "arrowRight.png", 60,60)
-    aboutArrow.x = display.contentWidth/2 + 100
-	  aboutArrow.y = display.contentHeight/2 - 80
-    group:insert(aboutArrow)
+  -- show logo  page
+  local logoImage = display.newImageRect ("cafelogo.png", 320,100)
+  logoImage.x = (_W/2)
+	logoImage.y = 100
+  group:insert(logoImage)
+
+    --aboutArrow = display.newImageRect ( "arrowRight.png", 60,60)
+    --aboutArrow.x = display.contentWidth/2 + 100
+	  --aboutArrow.y = display.contentHeight/2 - 80
+    --group:insert(aboutArrow)
 
 
     productsArrow = display.newImageRect ( "arrowRight.png", 60,60)
-    productsArrow.x = display.contentWidth/2 + 100
-	  productsArrow.y = display.contentHeight/2 
+    productsArrow.x = _W/2 + 100
+	  productsArrow.y = _H/2 
     group:insert(productsArrow)
 
 
@@ -296,9 +307,9 @@ function scene:enterScene( event )
 	-----------------------------------------------------------------------------
 		
 	--	INSERT code here (e.g. start timers, load audio, start listeners, etc.)
-	message:setTextColor( 255,0,0 )
+	--message:setTextColor( 255,0,0 )
 
-	aboutArrow:addEventListener ("touch", about)
+	--aboutArrow:addEventListener ("touch", about)
 	productsArrow:addEventListener ("touch", products)
 	contactArrow:addEventListener ("touch", contact)
 	
