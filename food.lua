@@ -53,7 +53,7 @@ display.setStatusBar( display.HiddenStatusBar )
 
 
 --initial values
-lastScene = "food" -- so as backbutton on items can go back to product categorypage
+lastScene = "food" -- global variable so as backbutton on items can go back to product categorypage
 
 local screenOffsetW, screenOffsetH = display.contentWidth -  display.viewableContentWidth, display.contentHeight - display.viewableContentHeight 
 -- used for offsetting buttons
@@ -111,12 +111,12 @@ end
 data[1] = {}
 data[1].title = "Currywurst"
 data[1].subtitle = "Sausage served with our own Currysauce recipe from Berlin."
-data[1].image = "food/curr90.png"
+data[1].image = "food/curr9090.png"
 
 data[2] = {}
 data[2].title = "Schnitzel"
 data[2].subtitle = "Weiner Schnitzel - pork rendered and battered and breadcrumbed and served with a variey of potatoes and vegitables"
-data[2].image = "food/snit90.png"
+data[2].image = "food/snit9090.png"
 
 data[3] = {}
 data[3].title = "Bratwurst"
@@ -126,7 +126,7 @@ data[3].image = "food/brat90.png"
 data[4] = {}
 data[4].title = "Grostl"
 data[4].subtitle = "Grostl fried potatoes, onion, herbs, ham, and egg. Famous in Southern Germany, where it is sometimes know as farmers plate and in the Tirol region in Austria."
-data[4].image = "food/gros90.png"
+data[4].image = "food/gros9090.png"
 
 data[5] = {}
 data[5].title = "Splaetze"
@@ -136,7 +136,7 @@ data[5].image = "food/spla90.png"
 data[6] = {}
 data[6].title = "Pork Knuckle"
 data[6].subtitle = "Pork Knuckle glazed and served with cabbage or portatoes"
-data[6].image = "food/pork90.png"
+data[6].image = "food/pork9090.png"
 
 
 
@@ -169,7 +169,8 @@ local bottomBoundary = display.screenOriginY + 0
                          title.x = title.width*0.5 + img.width + 6
                          title.y = 30
 
-                         local subtitle =  display.newText( row.subtitle, 0, 0, native.systemFont, 12 )
+                         --local subtitle = string.sub(row.subtitle,1,29) 
+                         local subtitle = display.newText( string.sub(row.subtitle,1,29).."..", 0, 0, native.systemFont, 12 )
                          subtitle:setTextColor(80,80,80)
                          g:insert(subtitle)
                          subtitle.x = subtitle.width*0.5 + img.width + 6
