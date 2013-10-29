@@ -159,8 +159,11 @@ function scene:enterScene( event )
   group:insert(description)
 
  
- 
- 
+ -- show logo at bottom of page
+  local logoImage = display.newImageRect ("cafelogo.png", 320,100)
+  logoImage.x = (_W/2)
+	logoImage.y = _H-100
+  group:insert(logoImage)
 
 	-----------------------------------------------------------------------------
 	

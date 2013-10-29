@@ -269,7 +269,11 @@ group:insert(navHeader)
 	  --softdrinksArrow.y = (_H/4 ) *3
     --group:insert(softdrinksArrow)
 
-
+-- show logo in middle
+  local logoImage = display.newImageRect ("cafelogo.png", 320,100)
+  logoImage.x = (_W/2)
+	logoImage.y = (_H/2) 
+  group:insert(logoImage)
 	-----------------------------------------------------------------------------
 	
 end -- end of scene:createScene function
