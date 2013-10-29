@@ -53,7 +53,6 @@ display.setStatusBar( display.HiddenStatusBar )
 
 
 --initial values
-
 lastScene = "food" -- so as backbutton on items can go back to product categorypage
 
 local screenOffsetW, screenOffsetH = display.contentWidth -  display.viewableContentWidth, display.contentHeight - display.viewableContentHeight 
@@ -111,27 +110,27 @@ end
 --setup each row as a new table, then add title, subtitle, and image
 data[1] = {}
 data[1].title = "Currywurst"
-data[1].subtitle = "Sausage served with Currysauce."
+data[1].subtitle = "Sausage served with our own Currysauce recipe from Berlin."
 data[1].image = "food/curr90.png"
 
 data[2] = {}
 data[2].title = "Schnitzel"
-data[2].subtitle = "Weiner Schnitzel "
+data[2].subtitle = "Weiner Schnitzel - pork rendered and battered and breadcrumbed and served with a variey of potatoes and vegitables"
 data[2].image = "food/snit90.png"
 
 data[3] = {}
 data[3].title = "Bratwurst"
-data[3].subtitle = "German wurst served with a bap and mustard"
+data[3].subtitle = "German wurst served with a bap and mustard, also available is a serving with pototatoes and cabbage"
 data[3].image = "food/brat90.png"
 
 data[4] = {}
 data[4].title = "Grostl"
-data[4].subtitle = "Grostl fried potatoes, onion, herbs, ham, and egg"
+data[4].subtitle = "Grostl fried potatoes, onion, herbs, ham, and egg. Famous in Southern Germany, where it is sometimes know as farmers plate and in the Tirol region in Austria."
 data[4].image = "food/gros90.png"
 
 data[5] = {}
 data[5].title = "Splaetze"
-data[5].subtitle = "Pasta egg dish"
+data[5].subtitle = "Pasta egg dish, famous in Bavaria and the southern regions of germany, where it is a substitute for rice, pasta or potatoes in many dishes"
 data[5].image = "food/spla90.png"
 
 data[6] = {}
