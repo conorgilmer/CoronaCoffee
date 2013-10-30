@@ -1,0 +1,14 @@
+Assignment 2 Mobile Development
+by Conor Gilmer (conor.gilmer@gmail.com)
+
+Lecturer Alan Grace
+Digital Skills Academy (DIT)
+
+Mobile App in Corona SDK-Lua 
+
+Based on the coffee app from lectures I decided to do a cafe
+using products/categories as Coffees, Teas, Biscuits and Snack Foods
+
+The Name i Chose was Cafe Libre (being based in the liberties i chose Libre)
+I also chose the Italian flag colours Red and Green.
+For biscuit i chose generic biscuits, also since it was oktoberfest I chose the cafe to serve some southern german/austrian food snacks
