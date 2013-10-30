@@ -75,10 +75,16 @@ function scene:createScene( event )
 	--	Example use-case: Restore 'group' from previously saved state.
 	
   --set background
-	background = display.newImageRect ( "background.jpg", 320,480)
-	background.x = _W/2
-	background.y = _H/2
-	group:insert(background)
+	--background = display.newImageRect ( "background.jpg", 320,480)
+	--background.x = _W/2
+	--background.y = _H/2
+	--group:insert(background)
+  
+     -- set background to be white
+  local background = display.newRect(0, 0, _W, _H)
+  background:setFillColor(255)   
+  group:insert(background)
+  
 
   -- page title text ... Logo?
 	--message = display.newText( "Cafe Libre", 160, 50, nil, 60 )

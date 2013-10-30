@@ -103,10 +103,15 @@ function scene:createScene( event )
 	--	CREATE display objects and add them to 'group' here.
 	--	Example use-case: Restore 'group' from previously saved state.
 	
-	background = display.newImageRect ( "background.jpg", 320,480)
-	background.x = display.contentWidth/2
-	background.y = display.contentHeight/2
-	group:insert(background)
+	--background = display.newImageRect ( "background.jpg", 320,480)
+	--background.x = display.contentWidth/2
+	--background.y = display.contentHeight/2
+	--group:insert(background)
+  
+     -- set background to be white
+  local background = display.newRect(0, 0, _W, _H)
+  background:setFillColor(255)   
+  group:insert(background)
   
   -- set generic navbar (menu) to true
   navbar.isVisible = true
@@ -141,19 +146,19 @@ group:insert(navHeader)
     group:insert(coffeeArrow)
     
     -- teas Icon
-    teasArrow = display.newImageRect ( "teas/tea90.png", 75,75)
+    teasArrow = display.newImageRect ( "teas/tea9090.png", 75,75)
     teasArrow.x = (_W/4) * 3
 	  teasArrow.y = _H/4
     group:insert(teasArrow)
     
     -- biscuits Icon
-    biscuitsArrow = display.newImageRect ( "biscuits/chocchip.png", 75,75)
+    biscuitsArrow = display.newImageRect ( "biscuits/chocchip9090.png", 75,75)
     biscuitsArrow.x = (_W/4) 
 	  biscuitsArrow.y = (_H/4) * 3
     group:insert(biscuitsArrow)
     
     -- food/snacks Icon
-    foodArrow = display.newImageRect ( "food/curr.jpg", 75,75)
+    foodArrow = display.newImageRect ( "food/curr9090.png", 75,75)
     foodArrow.x = (_W/4) *3
 	  foodArrow.y = (_H/4 ) *3
     group:insert(foodArrow)

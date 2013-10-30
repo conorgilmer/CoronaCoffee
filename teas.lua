@@ -127,6 +127,43 @@ data[2].country = "Sri Lanka"
 
 
 
+data[3] = {}
+data[3].title = "Peppermint Tea"
+data[3].subtitle = "Refreshing mint tea."
+data[3].image = "teas/tea90.png"
+data[3].scene = "teas"
+data[3].price = "€1.50"
+data[3].country = "France"
+
+
+data[4] = {}
+data[4].title = "Lemon Tea"
+data[4].subtitle = "Refreshing cleansing tea with fresh lemon."
+data[4].image = "teas/tea9090.png"
+data[4].scene = "teas"
+data[4].price = "€1.50"
+data[4].country = "France"
+
+
+data[5] = {}
+data[5].title = "Earl Grey"
+data[5].subtitle = "English earl grey tea."
+data[5].image = "teas/tea90.png"
+data[5].scene = "teas"
+data[5].price = "€2.50"
+data[5].country = "UK"
+
+data[6] = {}
+data[6].title = "Tea of the day"
+data[6].subtitle = "For variety and mystery try our tea of the day."
+data[6].image = "teas/tea90.png"
+data[6].scene = "teas"
+data[6].price = "€2.00"
+data[6].country = "Ireland"
+
+
+
+
 local topBoundary = display.screenOriginY + 80
 local bottomBoundary = display.screenOriginY + 0
 
