@@ -109,6 +109,7 @@ end --onbackrelease end
 
 
 --setup each row as a new table, then add title, subtitle, and image
+-- should be imported from file/db
 data[1] = {}
 data[1].title = "Afternoon Tea"
 data[1].subtitle = "Kenyan Tea, is a rich blend of teas we have. "
@@ -124,8 +125,6 @@ data[2].image = "teas/tea90.png"
 data[2].scene = "teas"
 data[2].price = "€2.35"
 data[2].country = "Sri Lanka"
-
-
 
 data[3] = {}
 data[3].title = "Peppermint Tea"
