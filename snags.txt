@@ -1,6 +1,6 @@
 
 top menu needs not to be curly or needs to go over a pixel or 2 on the right and left hand side
-
+passing parameters
 images need to be transparent
 icons on products page need words beneath
 text word wrapping around an image on a  page
