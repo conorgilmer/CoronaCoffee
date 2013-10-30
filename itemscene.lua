@@ -122,6 +122,7 @@ function scene:enterScene( event )
       	  print(params.var2) -- Subtitle
       	  print(params.var3) -- image
           print(params.var4) -- scene?
+          print(params.var5)
 
    --local textMessage = display.newText( "Hello Corona User!nHope you're having a great day.", 160, 325, "Helvetica", 18 )
    --textMessage:setTextColor( 7 )
@@ -152,12 +153,29 @@ function scene:enterScene( event )
 
   -- page content text
   -- todo import this text or format it using html? embed map?
-  local description = display.newText(params.var2, 0, 0, 300, 300, native.systemFont, 14)
+  local description = display.newText("\n\tPrice - "..params.var5.."\n\tCountry of Origin - "..params.var6.."\n\n"..params.var2, 0, 0, 300, 300, native.systemFont, 14)
   description:setTextColor(0) -- black
   description:setReferencePoint(_C)
   description.x = _W * 0.5 + 10
   description.y = title.y + 200
   group:insert(description)
+
+  --local price = display.newText(params.var5, 0, 0, 300, 300, native.systemFont, 14)
+  --price:setTextColor(0) -- black
+  --price:setReferencePoint(_C)
+  --price.x = _W * 0.5 + 10
+  --price.y = title.y + 240
+ -- group:insert(price)
+ 
+  --local country = display.newText(params.var6, 0, 0, 300, 300, native.systemFont, 14)
+  --country:setTextColor(0) -- black
+  --country:setReferencePoint(_C)
+ -- country.x = _W * 0.5 + 10
+--  country.y = title.y + 240
+ -- group:insert(description .."\n\tPrice - "..price.."\n\tCountry of Origin - ")
+
+
+
 
  
  -- show logo at bottom of page

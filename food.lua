@@ -90,7 +90,10 @@ function listButtonRelease( event )
    		 {
       	  var1 = self.data.title,
       	  var2 = self.data.subtitle,
-      	  var3 = self.data.image
+      	  var3 = self.data.image,
+          var4 = self.data.scene,
+          var5 = self.data.price,
+          var6 = self.data.country
   		 }
 	}
 
@@ -112,31 +115,49 @@ data[1] = {}
 data[1].title = "Currywurst"
 data[1].subtitle = "Sausage served with our own Currysauce recipe from Berlin."
 data[1].image = "food/curr9090.png"
+data[1].price = "€4.99"
+data[1].country = "Germany - Berlin"
 
 data[2] = {}
 data[2].title = "Schnitzel"
 data[2].subtitle = "Weiner Schnitzel - pork rendered and battered and breadcrumbed and served with a variey of potatoes and vegitables"
 data[2].image = "food/snit9090.png"
+data[2].price = "€6.99"
+data[2].country = "Germany(Bavaria) and Austria"
+
 
 data[3] = {}
 data[3].title = "Bratwurst"
 data[3].subtitle = "German wurst served with a bap and mustard, also available is a serving with pototatoes and cabbage"
 data[3].image = "food/brat90.png"
+data[3].price = "€4.99"
+data[3].country = "Germany"
+
 
 data[4] = {}
 data[4].title = "Grostl"
 data[4].subtitle = "Grostl fried potatoes, onion, herbs, ham, and egg. Famous in Southern Germany, where it is sometimes know as farmers plate and in the Tirol region in Austria."
 data[4].image = "food/gros9090.png"
+data[4].price = "€5.99"
+data[4].country = "Germany(Bavaria) and Austria(Tirol)"
+
+
 
 data[5] = {}
 data[5].title = "Splaetze"
 data[5].subtitle = "Pasta egg dish, famous in Bavaria and the southern regions of germany, where it is a substitute for rice, pasta or potatoes in many dishes"
 data[5].image = "food/spla90.png"
+data[5].price = "€5"
+data[5].country = "Southern Germany"
+
+
 
 data[6] = {}
 data[6].title = "Pork Knuckle"
 data[6].subtitle = "Pork Knuckle glazed and served with cabbage or portatoes"
 data[6].image = "food/pork9090.png"
+data[6].price = "€7.99"
+data[6].country = "Germany"
 
 
 
@@ -170,6 +191,7 @@ local bottomBoundary = display.screenOriginY + 0
                          title.y = 30
 
                          --local subtitle = string.sub(row.subtitle,1,29) 
+                         -- cut string so as it wont overrun and add ....
                          local subtitle = display.newText( string.sub(row.subtitle,1,29).."..", 0, 0, native.systemFont, 12 )
                          subtitle:setTextColor(80,80,80)
                          g:insert(subtitle)

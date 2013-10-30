@@ -88,7 +88,10 @@ function listButtonRelease( event )
    		 {
       	  var1 = self.data.title,
       	  var2 = self.data.subtitle,
-      	  var3 = self.data.image
+      	  var3 = self.data.image,
+          var4 = self.data.scene,
+          var5 = self.data.price,
+          var6 = self.data.country
   		 }
 	}
 
@@ -108,15 +111,19 @@ end --onbackrelease end
 --setup each row as a new table, then add title, subtitle, and image
 data[1] = {}
 data[1].title = "Afternoon Tea"
-data[1].subtitle = "Keynan Tea"
+data[1].subtitle = "Kenyan Tea, is a rich blend of teas we have. "
 data[1].image = "teas/tea90.png"
 data[1].scene = "teas"
+data[1].price = "€2.20"
+data[1].country = "Kenya"
 
 data[2] = {}
 data[2].title = "Breakfast Tea"
-data[2].subtitle = "Sri Lankan Tea"
+data[2].subtitle = "Sri Lankan Tea, is a refresing tea from the colonial days of Ceylon, Sri lanka has produced some of the finest tea in the wrold."
 data[2].image = "teas/tea90.png"
 data[2].scene = "teas"
+data[2].price = "€2.35"
+data[2].country = "Sri Lanka"
 
 
 

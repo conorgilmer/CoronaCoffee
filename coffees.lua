@@ -94,7 +94,10 @@ function listButtonRelease( event )
    		 {
       	  var1 = self.data.title,
       	  var2 = self.data.subtitle,
-      	  var3 = self.data.image
+      	  var3 = self.data.image,
+          var4 = self.data.scene,
+          var5 = self.data.price,
+          var6 = self.data.country
   		 }
 	}
 
@@ -116,31 +119,46 @@ data[1] = {}
 data[1].title = "Hot Coffee"
 data[1].subtitle = "Grounds brewed in hot water"
 data[1].image = "coffees/coffee1.png"
+data[1].price = "€2.00"
+data[1].country = "Cuban"
 
 data[2] = {}
 data[2].title = "Iced Coffee"
 data[2].subtitle = "Chilled coffee with ice"
 data[2].image = "coffees/coffee2.png"
+data[2].price = "€2.20"
+data[2].country = "America"
 
 data[3] = {}
 data[3].title = "Espresso"
 data[3].subtitle = "Hot water forced through"
 data[3].image = "coffees/coffee3.png"
+data[3].price = "€2.20"
+data[3].country = "Italy"
+
 
 data[4] = {}
 data[4].title = "Cappuccino"
 data[4].subtitle = "Espresso with frothy milk"
 data[4].image = "coffees/coffee4.png"
+data[4].price = "€2.50"
+data[4].country = "Austrian Blend"
+
 
 data[5] = {}
 data[5].title = "Latte"
 data[5].subtitle = "More milk and less froth"
 data[5].image = "coffees/coffee5.png"
+data[5].price = "€2.90"
+data[5].country = "Italy"
+
 
 data[6] = {}
 data[6].title = "Americano"
 data[6].subtitle = "Espresso with hot water"
 data[6].image = "coffees/coffee6.png"
+data[6].price = "€2.30"
+data[6].country = "USA"
 
 
 local topBoundary = display.screenOriginY + 80 --twice 40
