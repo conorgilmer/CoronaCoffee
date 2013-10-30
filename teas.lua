@@ -149,7 +149,9 @@ local bottomBoundary = display.screenOriginY + 0
                          title.x = title.width*0.5 + img.width + 6
                          title.y = 30
 
-                         local subtitle =  display.newText( row.subtitle, 0, 0, native.systemFont, 12 )
+                      --cg   local subtitle =  display.newText( row.subtitle, 0, 0, native.systemFont, 12 )
+                          local subtitle = display.newText( string.sub(row.subtitle,1,29).."..", 0, 0, native.systemFont, 12 )
+                       
                          subtitle:setTextColor(80,80,80)
                          g:insert(subtitle)
                          subtitle.x = subtitle.width*0.5 + img.width + 6
