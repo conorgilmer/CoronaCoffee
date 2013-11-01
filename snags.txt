@@ -1,8 +1,7 @@
-
 top menu needs not to be curly or needs to go over a pixel or 2 on the right and left hand side
 passing parameters
 images need to be transparent
 icons on products page need words beneath
 text word wrapping around an image on a  page
-subtitled text needs to be shorted so as not to over run - done with string(subtitle, 1, 29)
+done - subtitled text needs to be shorted so as not to over run - done with string(subtitle, 1, 29)
 read from db or files
