@@ -122,7 +122,9 @@ function scene:enterScene( event )
       	  print(params.var2) -- Subtitle
       	  print(params.var3) -- image
           print(params.var4) -- scene?
-          print(params.var5)
+          print(params.var5) -- price cost
+          print(params.var6) -- country of origin
+          print(params.var7) -- big image
 
    --local textMessage = display.newText( "Hello Corona User!nHope you're having a great day.", 160, 325, "Helvetica", 18 )
    --textMessage:setTextColor( 7 )
@@ -146,8 +148,8 @@ function scene:enterScene( event )
   group:insert(title)
   
   -- get passed image and display
-  itemImage = display.newImageRect ( params.var3, 60,60)
-  itemImage.x = _W*0.5 --(_W/4) *3 
+  itemImage = display.newImageRect ( params.var7, 60,60)
+  itemImage.x = _W * 0.5 
 	itemImage.y = title.y +60
   group:insert(itemImage)
 

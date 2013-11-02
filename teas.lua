@@ -91,7 +91,8 @@ function listButtonRelease( event )
       	  var3 = self.data.image,
           var4 = self.data.scene,
           var5 = self.data.price,
-          var6 = self.data.country
+          var6 = self.data.country,
+                    var7 = self.data.bigimage
   		 }
 	}
 
@@ -117,6 +118,7 @@ data[1].image = "teas/tea90.png"
 data[1].scene = "teas"
 data[1].price = "€2.20"
 data[1].country = "Kenya"
+data[1].bigimage = "teas/tea90.png"
 
 data[2] = {}
 data[2].title = "Breakfast Tea"
@@ -125,6 +127,7 @@ data[2].image = "teas/tea90.png"
 data[2].scene = "teas"
 data[2].price = "€2.35"
 data[2].country = "Sri Lanka"
+data[2].bigimage = "teas/tea90.png"
 
 data[3] = {}
 data[3].title = "Peppermint Tea"
@@ -133,6 +136,7 @@ data[3].image = "teas/mint9090.png"
 data[3].scene = "teas"
 data[3].price = "€1.50"
 data[3].country = "France"
+data[3].bigimage = "teas/mint.png"
 
 
 data[4] = {}
@@ -142,6 +146,7 @@ data[4].image = "teas/tea9090.png"
 data[4].scene = "teas"
 data[4].price = "€1.50"
 data[4].country = "France"
+data[4].bigimage = "teas/tea9090.png"
 
 
 data[5] = {}
@@ -151,6 +156,8 @@ data[5].image = "teas/tea90.png"
 data[5].scene = "teas"
 data[5].price = "€2.50"
 data[5].country = "UK"
+data[5].bigimage = "teas/tea90.png"
+
 
 data[6] = {}
 data[6].title = "Tea of the day"
@@ -159,6 +166,7 @@ data[6].image = "teas/tea90.png"
 data[6].scene = "teas"
 data[6].price = "€2.00"
 data[6].country = "Ireland"
+data[2].bigimage = "teas/tea90.png"
 
 
 

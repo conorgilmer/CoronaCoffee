@@ -43,6 +43,13 @@ function left (event)
 end
 
 
+
+--function goToURL(event)
+	--	url = "http://www.appwayz.com"
+    ---url = event.object2
+     --    system.openURL( url )        
+	--end
+	
 -- Called when the scene's view does not exist:
 function scene:createScene( event )
 	local group = self.view
@@ -90,7 +97,12 @@ function scene:createScene( event )
   description.x = _W * 0.5 + 10
   description.y = title.y + 200
   group:insert(description)
-
+  
+  --local linkText = display.newText("www.appwayz.com", 0 ,0, 300, 300, native.systemFont, 14)
+  --linkText.x = _W *0.5
+  --linkText.y = _H -100
+  --linkText:addEventListener("tap", goToURL)
+  --group:insert(linkText)
 
   -- show logo at bottom of page
   local logoImage = display.newImageRect ("cafelogo.png", 320,100)

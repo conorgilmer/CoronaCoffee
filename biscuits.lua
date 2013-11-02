@@ -91,7 +91,8 @@ function listButtonRelease( event )
       	  var3 = self.data.image,
           var4 = self.data.scene,
           var5 = self.data.price,
-          var6 = self.data.country
+          var6 = self.data.country,
+                    var7 = self.data.bigimage
   		 }
 	}
 
@@ -115,6 +116,7 @@ data[1].subtitle = "American Chocolate Chip Cookies"
 data[1].image = "biscuits/chocchip90.png"
 data[1].price = "€0.99 for 3"
 data[1].country = "USA"
+data[1].bigimage = "biscuits/chocchip.png"
 
 data[2] = {}
 data[2].title = "Digestives"
@@ -122,6 +124,7 @@ data[2].subtitle = "Digestive and Chocolate Digestive biscuits"
 data[2].image = "biscuits/chocdig90.png"
 data[2].price = "€0.99 for 4"
 data[2].country = "Ireland"
+data[2].bigimage = "biscuits/chocdig.png"
 
 data[3] = {}
 data[3].title = "Fig Rolls"
@@ -129,14 +132,23 @@ data[3].subtitle = "Jacobs Fig Rolls"
 data[3].image = "biscuits/figroll90.png"
 data[3].price = "€0.90 for 3"
 data[3].country = "Ireland"
-
+data[3].bigimage = "biscuits/figroll.png"
 
 data[4] = {}
 data[4].title = "Jammy Dodgers"
 data[4].subtitle = "Biscuits with a jammy center."
-data[4].image = "biscuits/jj.png"
+data[4].image = "biscuits/jd90.png"
 data[4].price = "€0.90 for 3"
 data[4].country = "Ireland"
+data[4].bigimage = "biscuits/jd.png"
+
+data[5] = {}
+data[5].title = "Shortbread Biscuits"
+data[5].subtitle = "Traditional Scotish Shortbread biscuits."
+data[5].image = "biscuits/sb90.png"
+data[5].price = "€1.10 for 4"
+data[5].country = "Scotland"
+data[5].bigimage = "biscuits/sb.png"
 
 
 local topBoundary = display.screenOriginY + 80

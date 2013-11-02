@@ -93,7 +93,8 @@ function listButtonRelease( event )
       	  var3 = self.data.image,
           var4 = self.data.scene,
           var5 = self.data.price,
-          var6 = self.data.country
+          var6 = self.data.country,
+          var7 =self.data.bigimage
   		 }
 	}
 
@@ -117,6 +118,8 @@ data[1].subtitle = "Sausage served with our own Currysauce recipe from Berlin."
 data[1].image = "food/curr9090.png"
 data[1].price = "€4.99"
 data[1].country = "Germany - Berlin"
+data[1].bigimage = "food/curr9090.png"
+
 
 data[2] = {}
 data[2].title = "Schnitzel"
@@ -124,6 +127,7 @@ data[2].subtitle = "Weiner Schnitzel - pork rendered and battered and breadcrumb
 data[2].image = "food/snit9090.png"
 data[2].price = "€6.99"
 data[2].country = "Germany(Bavaria) and Austria"
+data[2].bigimage = "food/snit9090.png"
 
 
 data[3] = {}
@@ -132,7 +136,7 @@ data[3].subtitle = "German wurst served with a bap and mustard, also available i
 data[3].image = "food/brat90.png"
 data[3].price = "€4.99"
 data[3].country = "Germany"
-
+data[3].bigimage = "food/brat90.png"
 
 data[4] = {}
 data[4].title = "Grostl"
@@ -140,8 +144,7 @@ data[4].subtitle = "Grostl fried potatoes, onion, herbs, ham, and egg. Famous in
 data[4].image = "food/gros9090.png"
 data[4].price = "€5.99"
 data[4].country = "Germany(Bavaria) and Austria(Tirol)"
-
-
+data[4].bigimage = "food/gros9090.png"
 
 data[5] = {}
 data[5].title = "Splaetze"
@@ -149,8 +152,7 @@ data[5].subtitle = "Pasta egg dish, famous in Bavaria and the southern regions o
 data[5].image = "food/spla90.png"
 data[5].price = "€5"
 data[5].country = "Southern Germany"
-
-
+data[5].bigimage = "food/spla90.png"
 
 data[6] = {}
 data[6].title = "Pork Knuckle"
@@ -158,6 +160,7 @@ data[6].subtitle = "Pork Knuckle glazed and served with cabbage or portatoes"
 data[6].image = "food/pork9090.png"
 data[6].price = "€7.99"
 data[6].country = "Germany"
+data[6].bigimage = "food/pork9090.png"
 
 
 
