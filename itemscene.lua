@@ -147,8 +147,8 @@ function scene:enterScene( event )
   
   -- get passed image and display
   itemImage = display.newImageRect ( params.var3, 60,60)
-  itemImage.x = (_W/4) *3 
-	itemImage.y = 200
+  itemImage.x = _W*0.5 --(_W/4) *3 
+	itemImage.y = title.y +60
   group:insert(itemImage)
 
   -- page content text
@@ -157,7 +157,7 @@ function scene:enterScene( event )
   description:setTextColor(0) -- black
   description:setReferencePoint(_C)
   description.x = _W * 0.5 + 10
-  description.y = title.y + 200
+  description.y = itemImage.y + 175
   group:insert(description)
 
   --local price = display.newText(params.var5, 0, 0, 300, 300, native.systemFont, 14)

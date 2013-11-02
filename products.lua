@@ -196,8 +196,8 @@ group:insert(navHeader)
 
 -- show logo in middle
   local logoImage = display.newImageRect ("cafelogo.png", 320,100)
-  logoImage.x = (_W/2)
-	logoImage.y = (_H/2) 
+  logoImage.x = (_W/2) + 10
+	logoImage.y = (_H/2) + 20
   group:insert(logoImage)
   group:insert(navHeader)
 	-----------------------------------------------------------------------------

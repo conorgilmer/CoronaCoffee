@@ -131,6 +131,14 @@ data[3].price = "€0.90 for 3"
 data[3].country = "Ireland"
 
 
+data[4] = {}
+data[4].title = "Jammy Dodgers"
+data[4].subtitle = "Biscuits with a jammy center."
+data[4].image = "biscuits/jj.png"
+data[4].price = "€0.90 for 3"
+data[4].country = "Ireland"
+
+
 local topBoundary = display.screenOriginY + 80
 local bottomBoundary = display.screenOriginY + 0
 
