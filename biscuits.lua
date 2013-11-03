@@ -116,7 +116,7 @@ data[1].subtitle = "American Chocolate Chip Cookies"
 data[1].image = "biscuits/chocchip90.png"
 data[1].price = "€0.99 for 3"
 data[1].country = "USA"
-data[1].bigimage = "biscuits/chocchip.png"
+data[1].bigimage = "biscuits/chocchip90.png"
 
 data[2] = {}
 data[2].title = "Digestives"
@@ -124,7 +124,7 @@ data[2].subtitle = "Digestive and Chocolate Digestive biscuits"
 data[2].image = "biscuits/chocdig90.png"
 data[2].price = "€0.99 for 4"
 data[2].country = "Ireland"
-data[2].bigimage = "biscuits/chocdig.png"
+data[2].bigimage = "biscuits/chocdig90.png"
 
 data[3] = {}
 data[3].title = "Fig Rolls"
@@ -132,7 +132,7 @@ data[3].subtitle = "Jacobs Fig Rolls"
 data[3].image = "biscuits/figroll90.png"
 data[3].price = "€0.90 for 3"
 data[3].country = "Ireland"
-data[3].bigimage = "biscuits/figroll.png"
+data[3].bigimage = "biscuits/figroll90.png"
 
 data[4] = {}
 data[4].title = "Jammy Dodgers"
