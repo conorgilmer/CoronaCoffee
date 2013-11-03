@@ -136,7 +136,7 @@ data[3].image = "teas/mint9090.png"
 data[3].scene = "teas"
 data[3].price = "€1.50"
 data[3].country = "France"
-data[3].bigimage = "teas/mint.png"
+data[3].bigimage = "teas/mint9090.png"
 
 
 data[4] = {}
@@ -146,17 +146,17 @@ data[4].image = "teas/tea9090.png"
 data[4].scene = "teas"
 data[4].price = "€1.50"
 data[4].country = "France"
-data[4].bigimage = "teas/tea9090.png"
+data[4].bigimage = "teas/lemontea.png"
 
 
 data[5] = {}
 data[5].title = "Earl Grey"
 data[5].subtitle = "English earl grey tea."
-data[5].image = "teas/tea90.png"
+data[5].image = "teas/teablack.png"
 data[5].scene = "teas"
 data[5].price = "€2.50"
 data[5].country = "UK"
-data[5].bigimage = "teas/tea90.png"
+data[5].bigimage = "teas/teablack.png"
 
 
 data[6] = {}

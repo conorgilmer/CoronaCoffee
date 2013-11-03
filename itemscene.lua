@@ -148,7 +148,7 @@ function scene:enterScene( event )
   group:insert(title)
   
   -- get passed image and display
-  itemImage = display.newImageRect ( params.var7, 60,60)
+  itemImage = display.newImage( params.var7 )
   itemImage.x = _W * 0.5 
 	itemImage.y = title.y +60
   group:insert(itemImage)
@@ -161,23 +161,6 @@ function scene:enterScene( event )
   description.x = _W * 0.5 + 10
   description.y = itemImage.y + 175
   group:insert(description)
-
-  --local price = display.newText(params.var5, 0, 0, 300, 300, native.systemFont, 14)
-  --price:setTextColor(0) -- black
-  --price:setReferencePoint(_C)
-  --price.x = _W * 0.5 + 10
-  --price.y = title.y + 240
- -- group:insert(price)
- 
-  --local country = display.newText(params.var6, 0, 0, 300, 300, native.systemFont, 14)
-  --country:setTextColor(0) -- black
-  --country:setReferencePoint(_C)
- -- country.x = _W * 0.5 + 10
---  country.y = title.y + 240
- -- group:insert(description .."\n\tPrice - "..price.."\n\tCountry of Origin - ")
-
-
-
 
  
  -- show logo at bottom of page

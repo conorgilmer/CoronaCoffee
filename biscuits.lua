@@ -151,6 +151,15 @@ data[5].country = "Scotland"
 data[5].bigimage = "biscuits/sb.png"
 
 
+data[6] = {}
+data[6].title = "Custard Creams"
+data[6].subtitle = "Sweet custard sandwiched with biscuit."
+data[6].image = "biscuits/custard9090.png"
+data[6].price = "€0.90 for 3"
+data[6].country = "Ireland & *K"
+data[6].bigimage = "biscuits/custard.png"
+
+
 local topBoundary = display.screenOriginY + 80
 local bottomBoundary = display.screenOriginY + 0
 
