@@ -91,7 +91,7 @@ function scene:createScene( event )
   
   -- page content text
   -- todo import this text or format it using html? embed map?
-  local description = display.newText("Cafe Libre\nThomas Street,\nDublin 2.\n\nPhone: 01-8118055\nEmail:conor.gilmer@gmail.com\nskype:cafelibred2\nfacebook:www.facebook.com/cafelibred2\ntwitter:www.twitter.com/cafelibred2", 0, 0, 300, 300, native.systemFont, 14)
+  local description = display.newText("Cafe Libre\nThomas Street,\nDublin 2.\n\nPhone: 01-8118055\nEmail:conor.gilmer@gmail.com\nSkype:cafelibred2\nFacebook:www.facebook.com/cafelibred2\nTwitter:www.twitter.com/cafelibred2", 0, 0, 300, 300, native.systemFont, 14)
   description:setTextColor(0) -- black
   description:setReferencePoint(_C)
   description.x = _W * 0.5 + 10
