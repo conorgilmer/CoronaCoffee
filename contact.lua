@@ -44,7 +44,17 @@ end
 
 
 
---function goToURL(event)
+function openGoogleMaps (event)
+   --Latitude & longtitude updated to from www.geocoder.com
+  lat = 53.341946
+  lng = -6.283815
+	url = "http://maps.google.com/maps?z=12&t=m&q=loc:"..lat.."+"..lng
+  system.openURL( url )        
+	end
+	
+	
+
+--function openLink (event)
 	--	url = "http://www.appwayz.com"
     ---url = event.object2
      --    system.openURL( url )        
@@ -91,18 +101,33 @@ function scene:createScene( event )
   
   -- page content text
   -- todo import this text or format it using html? embed map?
-  local description = display.newText("Cafe Libre\nThomas Street,\nDublin 2.\n\nPhone: 01-8118055\nEmail:conor.gilmer@gmail.com\nSkype:cafelibred2\nFacebook:www.facebook.com/cafelibred2\nTwitter:www.twitter.com/cafelibred2", 0, 0, 300, 300, native.systemFont, 14)
+  local description = display.newText("Cafe Libre\nCrane Street,\nThomas Street,\nDublin 2.\n\nPhone: 01-8118055\nEmail:conor.gilmer@gmail.com\nSkype:cafelibred2\nFacebook:www.facebook.com/cafelibred2\nTwitter:www.twitter.com/cafelibred2", 0, 0, 300, 300, native.systemFont, 14)
   description:setTextColor(0) -- black
   description:setReferencePoint(_C)
   description.x = _W * 0.5 + 10
   description.y = title.y + 200
   group:insert(description)
   
+  -- show screenshot of the google map and link this image to a browser opening in google maps
+  local mapImage = display.newImageRect ("assets/gmap.png", 125,94)
+  mapImage.x = (_W/2) +  80
+	mapImage.y = title.y  + 80
+  group:insert(mapImage)
+  mapImage:addEventListener("tap", openGoogleMaps)
+
+  
   --local linkText = display.newText("www.appwayz.com", 0 ,0, 300, 300, native.systemFont, 14)
   --linkText.x = _W *0.5
   --linkText.y = _H -100
   --linkText:addEventListener("tap", goToURL)
   --group:insert(linkText)
+  --insert link to google map
+  --local gmapsButton = display.newText("Location", 0, 0, native.systemFont, 20)
+	--gmapsButton.x = _W/2
+	--gmapsButton.y = description.y +50
+	--gmapsButton:setTextColor(0, 125, 125)
+	--gmapsButton:addEventListener("tap", openGoogleMaps)
+
 
   -- show logo at bottom of page
   local logoImage = display.newImageRect ("cafelogo.png", 320,100)
