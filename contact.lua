@@ -50,8 +50,22 @@ function openGoogleMaps (event)
   lng = -6.283815
 	url = "http://maps.google.com/maps?z=12&t=m&q=loc:"..lat.."+"..lng
   system.openURL( url )        
-	end
-	
+ end -- end opengooglemaps
+  
+  
+ function phoneCall (event)
+   if event.phase == "ended" then
+      system.openURL( "tel:0035386068764")
+       --print("tel")
+    end --endif
+end -- end phonecall
+
+function sendMail (event)
+   if event.phase == "ended" then
+        system.openURL( "mailto:conor.gilmer@gmail.com")
+        --print("mail")
+   end --endif
+end -- end sendmail
 	
 
 --function openLink (event)
@@ -101,12 +115,54 @@ function scene:createScene( event )
   
   -- page content text
   -- todo import this text or format it using html? embed map?
-  local description = display.newText("Cafe Libre\nCrane Street,\nThomas Street,\nDublin 2.\n\nPhone: 01-8118055\nEmail:conor.gilmer@gmail.com\nSkype:cafelibred2\nFacebook:www.facebook.com/cafelibred2\nTwitter:www.twitter.com/cafelibred2", 0, 0, 300, 300, native.systemFont, 14)
-  description:setTextColor(0) -- black
-  description:setReferencePoint(_C)
-  description.x = _W * 0.5 + 10
-  description.y = title.y + 200
-  group:insert(description)
+  --local description = display.newText("Cafe Libre\nCrane Street,\nThomas Street,\nDublin 2.\n\nPhone: 01-8118055\nEmail:conor.gilmer@gmail.com\nSkype:cafelibred2\nFacebook:www.facebook.com/cafelibred2\nTwitter:www.twitter.com/cafelibred2", 0, 0, 300, 300, native.systemFont, 14)
+  local address = display.newText("Cafe Libre\nCrane Street,\nThomas Street,\nDublin 2.\n\n", 0, 0, 300, 300, native.systemFont, 14)
+  address:setTextColor(0) -- black
+  address:setReferencePoint(_C)
+  address.x = _W * 0.5 + 10
+  address.y = title.y + 200
+  group:insert(address)
+  
+  
+--Phone: 01-8118055\nEmail:conor.gilmer@gmail.com\nSkype:cafelibred2\nFacebook:www.facebook.com/cafelibred2\nTwitter:www.twitter.com/cafelibred2
+
+local phone = display.newText("Phone: 0868068764\n", 0, 0, 300, 300, native.systemFont, 14)
+  phone:setTextColor(0) -- black
+  phone:setReferencePoint(_C)
+  phone.x = _W * 0.5 + 10
+  phone.y = address.y + 90
+  group:insert(phone)
+  phone:addEventListener("tap", phoneCall)
+  
+  local emailA = display.newText("Email: conor.gilmer@gmail.com\n", 0, 0, 300, 300, native.systemFont, 14)
+  emailA:setTextColor(0) -- black
+  emailA:setReferencePoint(_C)
+  emailA.x = _W * 0.5 + 10
+  emailA.y = phone.y + 20
+  group:insert(emailA)
+  emailA:addEventListener("tap", sendMail)
+  
+  local skype = display.newText("Skype: cafelibred2\n", 0, 0, 300, 300, native.systemFont, 14)
+  skype:setTextColor(0) -- black
+  skype:setReferencePoint(_C)
+  skype.x = _W * 0.5 + 10
+  skype.y = emailA.y + 20
+  group:insert(skype)
+  
+  local fb = display.newText("Facebook: www.facebook.com/cafelibre\n", 0, 0, 300, 300, native.systemFont, 14)
+  fb:setTextColor(0) -- black
+  fb:setReferencePoint(_C)
+  fb.x = _W * 0.5 + 10
+  fb.y = skype.y + 20
+  group:insert(fb)
+  
+  
+  local twitter = display.newText("Twitter: www.twitter.com/cafelibre\n", 0, 0, 300, 300, native.systemFont, 14)
+  twitter:setTextColor(0) -- black
+  twitter:setReferencePoint(_C)
+  twitter.x = _W * 0.5 + 10
+  twitter.y = fb.y + 20
+  group:insert(twitter)
   
   -- show screenshot of the google map and link this image to a browser opening in google maps
   local mapImage = display.newImageRect ("assets/gmap.png", 125,94)

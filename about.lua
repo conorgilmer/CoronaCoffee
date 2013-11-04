@@ -56,27 +56,28 @@ function scene:createScene( event )
   group:insert(title)
   
   
+  ------------File Read ---------------
+  -- code here to read the text from a file 
+  -- however in this assigment i just read it in from a field
   -- file read textfiles/about.txt
   local path = system.pathForFile("textfiles/about.txt", "")--system.DocumentsDirectory)
 
--- 
--- main.lua writing to a file
---
-local file = io.open( path,"r")
-local desc = ""
-local yL = 130
-for line in io.lines(path) do
-	desc = desc..line.."\n\t"
-end
+  local file = io.open( path,"r")
+  local desc = ""
+  local yL = 130
+  for line in io.lines(path) do
+	   desc = desc..line.."\n\t"
+  end
 
-io.close( file )
-
+  io.close( file )
   -- end of file read
+  ----------------Not being Used----------
   
   -- page content text
   -- todo import this text or format it using html? embed map?
-  --local description = display.newText("Cafe Libre\n\tIs a cafe which specialises in coffees, teas and continential cuisine. Located in the historic heart of dublin the cafe is famous for our blend of teas, and brewed coffees from around the world.\n \tDunk your favorite biscuit from our range of biscuits, you can also select from our range of snack foods.", 0, 0, 300, 300, native.systemFont, 14)
-  description = display.newText(desc, 0 ,0, 300,300, native.systemFont, 14) 
+  local desc1 = "Cafe Libre.\n\tIs a cafe which specialises in coffees, teas and continential cuisine. Located in the historic heart of dublin the cafe is famous for our blend of teas, and brewed coffees from around the world.\n \tDunk your favorite biscuit from our range of biscuits, you can also select from our range of snack foods."
+  
+  description = display.newText(desc1, 0 ,0, 300,300, native.systemFont, 14) 
   description:setTextColor(0) -- black
   description:setReferencePoint(_C)
   description.x = _W * 0.5 + 10
